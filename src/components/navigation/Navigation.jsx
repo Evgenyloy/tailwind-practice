@@ -1,6 +1,6 @@
 function Navigation() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between py-15">
       <p>Escape</p>
       <ul className="flex gap-10">
         <li>home</li>
