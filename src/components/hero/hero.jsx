@@ -1,4 +1,5 @@
 import Navigation from "../navigation/Navigation";
+import Container from "../ui/Container";
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative z-10 flex h-full flex-col">
-        <div className="mx-auto h-full w-full max-w-940">
+        <Container>
           <Navigation />
 
           <div className="flex flex-1 flex-col items-center justify-center px-4 pt-150 text-center">
@@ -25,7 +26,7 @@ function Hero() {
               View Latest Posts
             </button>
           </div>
-        </div>
+        </Container>
       </div>
     </section>
   );

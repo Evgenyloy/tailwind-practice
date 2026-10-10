@@ -1,36 +1,31 @@
-import favoriteImg1 from "../../../public/image/favorites/favorites1.webp";
-import favoriteImg2 from "../../../public/image/favorites/favorites2.webp";
-import author1 from "../../../public/image/favorites/author1.webp";
-
-function FavoritesItems() {
-  const date = new Date();
-
+function FavoritesItems({
+  image,
+  title,
+  excerpt,
+  authorName,
+  authorAvatar,
+  date,
+}) {
   return (
-    <article className="relative w-[100%] max-w-[460px] text-[#ffffffb2]">
+    <article className="relative w-[100%] max-w-[460px] cursor-pointer text-[#ffffffb2] transition-transform duration-275 hover:scale-101">
       <img
-        className="absolute inset-0 -z-10 h-full w-full object-cover"
-        src={favoriteImg1}
+        className="absolute inset-0 h-full w-full object-cover"
+        src={image}
         alt=""
       />
-      <div className="p-20">
-        <h2 className="mb-6 pt-156 text-[27px] text-[#ffffff]">
-          The Road Ahead
-        </h2>
-        <p className="mb-12">
-          The road ahead might be paved - it might not be.
-        </p>
+      <div className="relative z-10 p-20">
+        <h2 className="mb-6 pt-156 text-[27px] text-[#ffffff]">{title}</h2>
+        <p className="mb-12">{excerpt}</p>
         <div className="flex justify-between">
           <div className="flex gap-10">
             <img
               className="h-26 w-26 overflow-hidden rounded-2xl"
-              src={author1}
+              src={authorAvatar}
               alt=""
             />
-            <span>Mat Vogels</span>
+            <span>{authorName}</span>
           </div>
-          <div className="">
-            {date.toLocaleString("ru-Ru", { dateStyle: "long" })}
-          </div>
+          <div className="">{date}</div>
         </div>
       </div>
     </article>

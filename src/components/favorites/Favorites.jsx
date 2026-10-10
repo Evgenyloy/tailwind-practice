@@ -1,17 +1,20 @@
 import FavoritesItems from "../favorites-items/FavoritesItems";
+import Container from "../ui/Container";
+import { posts } from "./data";
 
 function Favorites() {
   return (
-    <section>
-      <div className="mx-auto max-w-940">
-        <h2 className="font-20 py-60 text-center text-[20px] text-[#2e2e2eFF]">
+    <section className="pt-20 pb-50">
+      <Container>
+        <h2 className="py-60 text-center text-[20px] text-[#2e2e2eFF]">
           Featured Posts
         </h2>
         <div className="flex justify-between">
-          <FavoritesItems />
-          <FavoritesItems />
+          {posts.map((post) => (
+            <FavoritesItems key={crypto.randomUUID()} {...post} />
+          ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

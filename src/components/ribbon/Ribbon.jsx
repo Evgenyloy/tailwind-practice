@@ -1,7 +1,9 @@
+import Container from "../ui/Container";
+
 function Ribbon() {
   return (
     <section>
-      <div className="mx-auto max-w-940">
+      <Container>
         <ul className="flex h-65 flex-wrap content-center justify-between text-[#768088FF]">
           <li>Nature</li>
           <li>Photography</li>
@@ -10,7 +12,7 @@ function Ribbon() {
           <li>Travel</li>
           <li>Adventure</li>
         </ul>
-      </div>
+      </Container>
     </section>
   );
 }
