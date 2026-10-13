@@ -4,3 +4,7 @@
 @theme {
   --spacing: 1px;
 }
+
+body {
+  background: #f7f7f7ff;
+}
