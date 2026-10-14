@@ -2,7 +2,7 @@ import Container from "../ui/Container";
 
 function Ribbon() {
   return (
-    <section>
+    <section className="bg-white">
       <Container>
         <ul className="flex h-65 flex-wrap content-center justify-between text-[#768088FF]">
           <li>Nature</li>

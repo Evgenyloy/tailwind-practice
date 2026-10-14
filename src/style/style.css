@@ -3,8 +3,10 @@
 
 @theme {
   --spacing: 1px;
+  --font-oxygen: "Oxygen", sans-serif;
 }
 
 body {
   background: #f7f7f7ff;
+  font-family: font-oxygen;
 }
