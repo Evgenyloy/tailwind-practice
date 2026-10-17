@@ -5,7 +5,7 @@ import { recentPosts } from "./data";
 
 function Recent() {
   return (
-    <section className="p-30">
+    <section className="p-30 pb-130">
       <Container>
         <Title title={"Most Recent"} />
         <div className="flex flex-wrap gap-24">

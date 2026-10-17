@@ -1,8 +1,8 @@
-
 import Hero from "../hero/Hero";
 import Ribbon from "../ribbon/Ribbon";
 import Favorites from "../favorites/Favorites";
 import Recent from "../recent/Recent";
+import Footer from "../footer/Footer";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Ribbon />
         <Favorites />
         <Recent />
+        <Footer />
       </div>
     </div>
   );
